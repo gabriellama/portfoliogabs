@@ -1,68 +1,96 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>gabriellama</title>
-    <link rel="icon" type="imagem/png" href="">
-    <link rel="stylesheet" href="./styles/style.css">
-    <script src="script.js" defer></script>
-</head>
-<body>
-    <ul>
-        <li>
-            <a href="#sobremim">Sobre Mim</a>
-        </li>
-        <li>
-            <a href="#portfolio">Portfolio</a>
-        </li>
-        <li>
-            <a href="contato.html">Contato</a>
-        </li>
-    </ul>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>gabriellama</title>
+        <link rel="icon" type="imagem/png" href="./assets/img/do-utilizador.png">
 
-    <h1>Sobre Mim</h1>
-    <p>
-        Mussum Ipsum, cacilds vidis litro abertis.  Mé faiz elementum girarzis, nisi eros vermeio. Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget. 
-        Delegadis gente finis, bibendum egestas augue arcu ut est. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose.
+        <link rel="stylesheet" href="./css/styles.css" />
+        <link rel="stylesheet" href="./css/fontawesome.css"/>
 
-Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis. Não sou faixa preta cumpadi, 
-sou preto inteiris, inteiris. Detraxit consequat et quo num tendi nada.
+    </head>
 
-Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis. Quem manda na minha terra sou euzis! Mauris nec dolor in eros commodo tempor. 
-Aenean aliquam molestie leo, vitae iaculis nisl. Aenean aliquam molestie leo, vitae iaculis nisl.
 
-Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Aenean aliquam molestie leo, vitae iaculis nisl. 
-Copo furadis é disculpa de bebadis, arcu quam euismod magna. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per.
+    <body>
+        <header class="header">
+            <div class="container">
+                <a href="#perfil" class="logo">
+                    <img src="./assets/img/9dd45271b020a094a12bfeee12b39f65.jpg" class="img-logo"/>
+                </a>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#sobremim"><b>Sobre</b></a>
+                        </li>
+                        <li>
+                            <a href="#video"><b>Video</b></a>
+                        </li>
+                        <li>
+                            <a href="contato.html"><b>Contato</b></a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="darkmode">
+                    <input type="checkbox" name="btn" id="btn" />
+                    <label for="btn"></label>
+                </div>
+            </div>
+        </header>
 
-Paisis, filhis, espiritis santis. Hoje é sexta-feris, dia da maldadis! Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. 
-Bota 1 metro de cachacis aí pra viagem!
-    </p>
+        <section id="perfil">
+            <div class="container-perfil">
+                <div>
+                     <h1 class="titulo gradient">
+                        Desenvolvedora Full-Stack Jr.
+                    </h1>
+                    <p class="texto">
+                     Olá, eu sou a Gabs.
+                     Bem vindo ao meu portfolio!!
+                    </p>
+                </div>
 
-    <p>
-        Mussum Ipsum, cacilds vidis litro abertis.  Mé faiz elementum girarzis, nisi eros vermeio. Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget. Delegadis gente finis, bibendum egestas augue arcu ut est. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose.
+                <div>
+                    <img class="img-perfil" src="./assets/img/gabistrammer.png" alt="Desenho da criadora desse conteudo" >
+                </div>
+                
+            </div>
+        </section>
 
-Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis. Não sou faixa preta cumpadi, sou preto inteiris, inteiris. Detraxit consequat et quo num tendi nada.
+        <section id="sobremim">
+            <div class="container-sobre">
+                    <h1 class="titulo">Sobre Mim</h1>
+                    <div class="conteudo-sobre">
+                        <img class="img-sobre" src="./assets/img/IMG_2652.JPG" alt="imagem da gabriella">
+                    <p class="texto-sobre">
+                        Olá, meu nome é <b>Gabriella Martins</b>.
+                        Tenho 24 anos, moro em <b>Praia Grande - SP </b>, sou formada em Ciência da computação pela <b>Universidade Paulista - UNIP</b>... 
+                         
+                    </p>
+                    </div>
+            </div>
 
-Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis. Quem manda na minha terra sou euzis! Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl. Aenean aliquam molestie leo, vitae iaculis nisl.
 
-Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Aenean aliquam molestie leo, vitae iaculis nisl. Copo furadis é disculpa de bebadis, arcu quam euismod magna. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per.
+            <h1 class="titulo titulo-video">Vídeo</h1>
+        <section id="video">
+            <div class="container-video">
+                <iframe class="video-embed" 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/ScY4ZRwOhKQ?si=y3pwy6CjYPeFjNgB" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen></iframe>
+            </div>
+        </section>
 
-Paisis, filhis, espiritis santis. Hoje é sexta-feris, dia da maldadis! Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Bota 1 metro de cachacis aí pra viagem!
-    </p>
+        <footer class="footer">
+            <p>Desenvolvido por Gabriella M. A.</p> &copy; Todos os direitos reservados
+        </footer>
 
-    <img src="./assets/IMG_2651.JPG" alt="Foto da criadora desse conteudo" height="500" width="500">
-
-    <h2>Um pouco da Gabs</h2>
-    <iframe width="560" 
-    height="315" 
-    src="https://www.youtube.com/embed/ScY4ZRwOhKQ?si=y3pwy6CjYPeFjNgB" 
-    title="YouTube video player" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-    referrerpolicy="strict-origin-when-cross-origin" 
-    allowfullscreen></iframe>
-
-</body>
+        <script src="./assets/js/script.js"></script>
+    </body>
 </html>

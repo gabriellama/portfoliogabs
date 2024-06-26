@@ -4,38 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
+    <link rel="icon" type="imagem/png" href="./assets/img/telefone.png">
+    <link rel="stylesheet" href="./css/styles.css" />
+
 </head>
 <body>
-    <ul>
-        <li>
-            <a href="index.html">Sobre Mim</a>
-        </li>
-        <li>Portfolio</li>
-        <li>
-            <a href="contato.html">Contato</a>
-        </li>
-    </ul>
-    <h1>contato cmg</h1>
+    <header class="header">
+        <div class="container">
+            <a href="#perfil" class="logo">
+                <img src="./assets/img/9dd45271b020a094a12bfeee12b39f65.jpg" class="img-logo"/>
+            </a>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html"><b>Sobre</b></a>
+                    </li>
+                    <li>
+                        <a href="index.html"><b>Video</b></a>
+                    </li>
+                    <li>
+                        <a href="#contato"><b>Contato</b></a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="darkmode">
+                <input type="checkbox" name="btn" id="btn" />
+                <label for="btn"></label>
+            </div>
+        </div>
+    </header>
+    <div class="container-contato">
+        <h1 id="contato" class="titulo">Meu contato</h1>
+        <div class="conteudo-contato">
+            <form class="form-contato">
+                <label for="nome" class="texto">Nome:</label> <br>
+                <input type="text" id="nome" onkeyup="validaNome()"> 
+                <div id="txtNome"></div>
+                <br>
+                <label for="email" class="texto">E-mail:</label> <br>
+                <input type="email" id="email" onkeyup="validaEmail()"> 
+                <div id="txtEmail"></div>
+                <br>
+                <label for="assunto" class="texto">Assunto:</label> <br>
+                <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup="validaAssunto()"></textarea>
+                <div id="txtAssunto"></div>
+                <br>
+                <button class="btn" onclick="enviar()">Enviar</button>
+            </form>
+        </div>
+    </div>
 
-    <form>
-        <label for="nome">Nome:</label> <br>
-        <input type="text" id="nome"> 
-        <br>
-        <br>
-        <label for="email">E-mail:</label> <br>
-        <input type="email" id="email"> 
-        <br>
-        <br>
-        <label for="assunto">Assunto:</label> <br>
-        <textarea name="assunto" id="assunto" cols="60" rows="5"></textarea>
-        <br>
-        <br>
-        <button>Enviar</button>
-    </form>
+    <div class="endereco-contato">
+        <h2 class="titulo">Endereço:</h2>
+        <p class="texto">Praia Grande - SP</p>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7289.261867332903!2d-46.40716180429755!3d-24.00880641334651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce1daa67c6940d%3A0x6aca410b8ec0ee51!2sCanto%20do%20Forte%2C%20Praia%20Grande%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1718721309591!5m2!1spt-BR!2sbr" 
+        width="500" height="300"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" onmousemove="mapaZoom()" onmouseout="mapaNormal()" id="mapa"></iframe>
+    </div>
 
-    <h2>Endereço:</h2>
-    <p>Praia Grande - SP</p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116619.75963596698!2d-46.58054659942375!3d-24.01810286585092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce1d00114834dd%3A0xd9331312b249a764!2sPraia%20Grande%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1718376809321!5m2!1spt-BR!2sbr" 
-    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <footer class="footer">
+        <p>Desenvolvido por Gabriella M. A.</p> &copy; Todos os direitos reservados
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+
 </body>
 </html>
